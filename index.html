@@ -1,55 +1,103 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Personal Link Hub</title>
+    <title>Bio Link | Ux/Ui designer & AI Dev</title>
+    <meta name="description" content="Professional Ux/Ui designer & AI Dev - Personal Hub">
+
+    <!-- Google Fonts: Inter & Outfit for headings -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700&display=swap" rel="stylesheet">
+    <link
+        href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600&family=Outfit:wght@500;700;800&display=swap"
+        rel="stylesheet">
+
+    <!-- FontAwesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+
+    <!-- Custom CSS -->
     <link rel="stylesheet" href="style.css">
 </head>
+
 <body>
-    <div class="background-glow"></div>
+    <!-- Cinematic Background -->
+    <div class="bg-noise"></div>
+    <div class="bg-gradient-mesh">
+        <div class="orb orb-1"></div>
+        <div class="orb orb-2"></div>
+        <div class="orb orb-3"></div>
+    </div>
+
     <div class="container">
-        <header class="profile">
-            <!-- Replace with actual user image url or local path -->
-            <div class="profile-img-container">
-                <img src="https://ui-avatars.com/api/?name=User+Name&background=random" alt="Profile Picture" class="profile-img">
+        <!-- Profile Section -->
+        <header class="profile-section fade-in">
+            <div class="avatar-container">
+                <div class="avatar-glow"></div>
+                <img src="assets/profile_pic.png" alt="Profile Picture" class="avatar">
             </div>
-            <h1 class="name">User Name</h1>
-            <p class="sub-headline">Digital Creator & Developer</p>
+            <h1 class="name">Ux/Ui designer & AI Dev</h1>
+            <p class="description">Professional xizmatlar va kreativ yechimlar — sizning muvaffaqiyatga yetaklovchi yo'l
+            </p>
         </header>
 
-        <main class="links">
-            <a href="https://instagram.com" target="_blank" class="link-card" aria-label="Instagram">
-                <span class="icon">
-                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-instagram"><rect x="2" y="2" width="20" height="20" rx="5" ry="5"></rect><path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z"></path><line x1="17.5" y1="6.5" x2="17.51" y2="6.5"></line></svg>
-                </span>
-                <span class="link-text">Instagram</span>
+        <!-- Links Section -->
+        <main class="links-container">
+            <!-- Telegram -->
+            <a href="https://t.me/Maqsadjoovich" class="link-card glass-button telegram-btn stagger-1" target="_blank">
+                <div class="glow-effect"></div>
+                <span class="btn-border"></span>
+                <div class="icon-wrapper">
+                    <i class="fa-brands fa-telegram"></i>
+                </div>
+                <div class="content-wrapper">
+                    <span class="link-text">Telegram</span>
+                    <span class="sub-text">Biz bilan bog'laning:</span>
+                </div>
+                <div class="arrow-wrapper">
+                    <i class="fa-solid fa-chevron-right"></i>
+                </div>
             </a>
 
-            <a href="https://t.me" target="_blank" class="link-card" aria-label="Telegram">
-                <span class="icon">
-                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-send"><line x1="22" y1="2" x2="11" y2="13"></line><polygon points="22 2 15 22 11 13 2 9 22 2"></polygon></svg>
-                </span>
-                <span class="link-text">Telegram</span>
+            <!-- Instagram -->
+            <a href="https://instagram.com/bekzod_jahongirov" class="link-card glass-button instagram-btn stagger-2"
+                target="_blank">
+                <div class="glow-effect"></div>
+                <span class="btn-border"></span>
+                <div class="icon-wrapper">
+                    <i class="fa-brands fa-instagram"></i>
+                </div>
+                <div class="content-wrapper">
+                    <span class="link-text">Instagram</span>
+                    <span class="sub-text">Tezkor bog'lanish:</span>
+                </div>
+                <div class="arrow-wrapper">
+                    <i class="fa-solid fa-chevron-right"></i>
+                </div>
             </a>
 
-            <a href="https://linkedin.com" target="_blank" class="link-card" aria-label="LinkedIn">
-                <span class="icon">
-                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-linkedin"><path d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-2-2 2 2 0 0 0-2 2v7h-4v-7a6 6 0 0 1 6-6z"></path><rect x="2" y="9" width="4" height="12"></rect><circle cx="4" cy="4" r="2"></circle></svg>
-                </span>
-                <span class="link-text">LinkedIn</span>
-            </a>
-
-            <a href="https://github.com" target="_blank" class="link-card" aria-label="GitHub">
-                <span class="icon">
-                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-github"><path d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 0 0-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0 0 20 4.77 5.07 5.07 0 0 0 19.91 1S18.73.65 16 2.48a13.38 13.38 0 0 0-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 0 0 5 4.77a5.44 5.44 0 0 0-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 0 0 9 18.13V22"></path></svg>
-                </span>
-                <span class="link-text">GitHub</span>
+            <!-- Phone / Bog'lanish -->
+            <a href="tel:+998880745515" class="link-card glass-button phone-btn stagger-3" target="_blank">
+                <div class="glow-effect"></div>
+                <span class="btn-border"></span>
+                <div class="icon-wrapper">
+                    <i class="fa-solid fa-phone-volume"></i>
+                </div>
+                <div class="content-wrapper">
+                    <span class="link-text">Bog'lanish</span>
+                    <span class="sub-text">+998 88 074 55 15</span>
+                </div>
+                <div class="arrow-wrapper">
+                    <i class="fa-solid fa-chevron-right"></i>
+                </div>
             </a>
         </main>
+
+        <footer class="footer fade-in">
+            <p>© 2024 Ux/Ui designer & AI Dev. All Rights Reserved.</p>
+        </footer>
     </div>
 </body>
+
 </html>
