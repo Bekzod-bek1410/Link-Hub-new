@@ -1,103 +1,97 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" class="dark">
 
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Bio Link | Ux/Ui designer & Web Designer</title>
-    <meta name="description" content="Professional Ux/Ui designer & Web Designer - Personal Hub">
+    <title>Bekzod J. | Link Hub</title>
+    <meta name="description" content="Ux/Ui designer & Web Designer - Link Hub">
 
-    <!-- Google Fonts: Inter & Outfit for headings -->
+    <!-- Fonts -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link
-        href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600&family=Outfit:wght@500;700;800&display=swap"
-        rel="stylesheet">
 
-    <!-- FontAwesome -->
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+    <!-- Lucide Icons -->
+    <script src="https://unpkg.com/lucide@latest"></script>
 
     <!-- Custom CSS -->
     <link rel="stylesheet" href="style.css">
 </head>
 
 <body>
-    <!-- Cinematic Background -->
-    <div class="bg-noise"></div>
-    <div class="bg-gradient-mesh">
-        <div class="orb orb-1"></div>
-        <div class="orb orb-2"></div>
-        <div class="orb orb-3"></div>
+    <!-- Background Decoration -->
+    <div class="bg-decor">
+        <div class="blob blob-1"></div>
+        <div class="blob blob-2"></div>
     </div>
 
     <div class="container">
-        <!-- Profile Section -->
-        <header class="profile-section fade-in">
-            <div class="avatar-container">
-                <div class="avatar-glow"></div>
-                <img src="assets/profile_pic.png" alt="Profile Picture" class="avatar">
+        <!-- Header Section -->
+        <header class="header">
+            <div class="avatar-wrapper">
+                <img src="assets/profile_pic.png" alt="Bekzod J." class="avatar">
             </div>
-            <h1 class="name">Ux/Ui designer & Web Designer</h1>
-            <p class="description">Professional xizmatlar va kreativ yechimlar — sizning muvaffaqiyatga yetaklovchi yo'l
-            </p>
+            <h1 class="name">Bekzod Jahongirov</h1>
+            <p class="bio">Ux/Ui designer & Web Designer. Professional xizmatlar va kreativ yechimlar — sizning
+                muvaffaqiyatga yetaklovchi yo'l.</p>
         </header>
 
-        <!-- Links Section -->
-        <main class="links-container">
+        <!-- Links Grid -->
+        <main class="links-grid">
             <!-- Telegram -->
-            <a href="https://t.me/Maqsadjoovich" class="link-card glass-button telegram-btn stagger-1" target="_blank">
-                <div class="glow-effect"></div>
-                <span class="btn-border"></span>
-                <div class="icon-wrapper">
-                    <i class="fa-brands fa-telegram"></i>
+            <a href="https://t.me/Maqsadjoovich" class="button-link" target="_blank">
+                <div class="link-content">
+                    <div class="icon-box">
+                        <i data-lucide="send"></i>
+                    </div>
+                    <span class="link-title">Telegram</span>
                 </div>
-                <div class="content-wrapper">
-                    <span class="link-text">Telegram</span>
-                    <span class="sub-text">Biz bilan bog'laning:</span>
-                </div>
-                <div class="arrow-wrapper">
-                    <i class="fa-solid fa-chevron-right"></i>
-                </div>
+                <i data-lucide="chevron-right" class="chevron"></i>
             </a>
 
             <!-- Instagram -->
-            <a href="https://instagram.com/bekzod_jahongirov" class="link-card glass-button instagram-btn stagger-2"
-                target="_blank">
-                <div class="glow-effect"></div>
-                <span class="btn-border"></span>
-                <div class="icon-wrapper">
-                    <i class="fa-brands fa-instagram"></i>
+            <a href="https://instagram.com/bekzod_jahongirov" class="button-link" target="_blank">
+                <div class="link-content">
+                    <div class="icon-box">
+                        <i data-lucide="instagram"></i>
+                    </div>
+                    <span class="link-title">Instagram</span>
                 </div>
-                <div class="content-wrapper">
-                    <span class="link-text">Instagram</span>
-                    <span class="sub-text">Tezkor bog'lanish:</span>
-                </div>
-                <div class="arrow-wrapper">
-                    <i class="fa-solid fa-chevron-right"></i>
-                </div>
+                <i data-lucide="chevron-right" class="chevron"></i>
             </a>
 
-            <!-- Phone / Bog'lanish -->
-            <a href="tel:+998880745515" class="link-card glass-button phone-btn stagger-3" target="_blank">
-                <div class="glow-effect"></div>
-                <span class="btn-border"></span>
-                <div class="icon-wrapper">
-                    <i class="fa-solid fa-phone-volume"></i>
+            <!-- Portfolio (Placeholder for future) -->
+            <a href="#" class="button-link">
+                <div class="link-content">
+                    <div class="icon-box">
+                        <i data-lucide="layout"></i>
+                    </div>
+                    <span class="link-title">Portfolio</span>
                 </div>
-                <div class="content-wrapper">
-                    <span class="link-text">Bog'lanish</span>
-                    <span class="sub-text">+998 88 074 55 15</span>
+                <i data-lucide="chevron-right" class="chevron"></i>
+            </a>
+
+            <!-- Contact -->
+            <a href="tel:+998880745515" class="button-link">
+                <div class="link-content">
+                    <div class="icon-box">
+                        <i data-lucide="phone"></i>
+                    </div>
+                    <span class="link-title">Bog'lanish</span>
                 </div>
-                <div class="arrow-wrapper">
-                    <i class="fa-solid fa-chevron-right"></i>
-                </div>
+                <i data-lucide="chevron-right" class="chevron"></i>
             </a>
         </main>
 
-        <footer class="footer fade-in">
-            <p>© 2026 Ux/Ui designer & Web Designer. All Rights Reserved.</p>
+        <footer class="footer">
+            <p>© 2026 Crafted with ❤️ for modern web.</p>
         </footer>
     </div>
+
+    <script>
+        // Initialize Lucide icons
+        lucide.createIcons();
+    </script>
 </body>
 
 </html>
